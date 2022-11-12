@@ -1,22 +1,26 @@
 import React from 'react';
+import ScalableList from 'components/ScalableList/ScalableList.js';
 import Ticket from 'components/Ticket/Ticket.js';
 
-const tickets = [...Array(20).keys()].map(i => {
-	return { id: i };
-});
+const items = [...Array(200).keys()].map(i => ({ id: i, subject: `Item ${i}` }));
 
 const Backlog = () => {
 	return (
-		<div>
-			<h1>Backlog</h1>
-			<ul>
-				{tickets.map(item => (
-					<li key={item.id}>
-						<Ticket content={item} />
-					</li>
-				))}
-			</ul>
-		</div>
+		<>
+			<h1>Ticket Backlog</h1>
+			<ScalableList
+				itemsTotal={items.length}
+				itemHeight={40}
+				listHeight={800}
+				renderItem={({ index, style }) => {
+					return (
+						<li key={index} style={style}>
+							<Ticket />
+						</li>
+					);
+				}}
+			/>
+		</>
 	);
 };
 
