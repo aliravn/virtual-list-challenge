@@ -1,17 +1,28 @@
 import React from 'react';
-import Ticket from 'components/Ticket/Ticket.js';
-import styles from './App.module.scss';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import Backlog from 'pages/Backlog/Backlog.js';
 
-const tickets = [...Array(10).keys()].map(i => {
-	return { id: i };
-});
+import styles from './App.module.scss';
 
 function App() {
 	return (
 		<div className={styles.app}>
-			{tickets.map(item => (
-				<Ticket />
-			))}
+			<Router>
+				<nav className={styles.navigation}>
+					<ul className={styles.navigationList}>
+						<li>
+							<Link to={'/backlog'} className={styles.navigationLink}>
+								Tickets List
+							</Link>
+						</li>
+					</ul>
+				</nav>
+				<Switch>
+					<Route path='/backlog'>
+						<Backlog />
+					</Route>
+				</Switch>
+			</Router>
 		</div>
 	);
 }
