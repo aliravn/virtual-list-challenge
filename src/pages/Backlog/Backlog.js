@@ -1,8 +1,9 @@
 import React from 'react';
 import ScalableList from 'components/ScalableList/ScalableList.js';
+import { createTicket } from 'utils/ticketFactory.js';
 import Ticket from 'components/Ticket/Ticket.js';
 
-const items = [...Array(200).keys()].map(i => ({ id: i, subject: `Item ${i}` }));
+const items = [...Array(200).keys()].map(i => createTicket(i));
 
 const Backlog = () => {
 	return (
