@@ -40,9 +40,13 @@ const ScalableList = props => {
 };
 
 ScalableList.propTypes = {
+	/* total number of items in the list */
 	itemsTotal: PropTypes.number,
+	/* defines height of each row in the list */
 	itemHeight: PropTypes.number,
+	/* callback function to return an eleemnt to render in the list */
 	renderItem: PropTypes.func,
+	/* height of the list area that is visible to the user */
 	listHeight: PropTypes.number,
 };
 

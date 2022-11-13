@@ -17,11 +17,17 @@ const Ticket = ({ data }) => {
 };
 
 Ticket.propTypes = {
+	/* ticket attributes */
 	data: PropTypes.shape({
+		/* ticket id in the database */
 		id: PropTypes.number,
+		/* ticket subject, can be title or in this example - ticket number */
 		subject: PropTypes.string,
+		/* priority code of the ticket */
 		priority: PropTypes.oneOf(priorityCodes),
+		/* current status code of the ticket */
 		status: PropTypes.oneOf(statusCodes),
+		/* main ticket content describing the work item */
 		description: PropTypes.string,
 	}).isRequired,
 };
