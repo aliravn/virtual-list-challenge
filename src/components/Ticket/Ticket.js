@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { statusCodes, priorityCodes } from 'utils/dataFactory.js';
 import classnames from 'classnames';
 import styles from 'components/Ticket/Ticket.module.scss';
 
@@ -12,6 +14,16 @@ const Ticket = ({ data }) => {
 			<div className={styles.description}>{description}</div>
 		</div>
 	);
+};
+
+Ticket.propTypes = {
+	data: PropTypes.shape({
+		id: PropTypes.number,
+		subject: PropTypes.string,
+		priority: PropTypes.oneOf(priorityCodes),
+		status: PropTypes.oneOf(statusCodes),
+		description: PropTypes.string,
+	}).isRequired,
 };
 
 export default Ticket;
