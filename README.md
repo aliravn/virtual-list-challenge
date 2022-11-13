@@ -12,11 +12,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 -   Run `yarn test:all` or `npm run test:all` to run all existing tests and see the coverage
 
-### Implemented according to MVP requirements:
+### Due to time constraints and private commitments I had a chance to finish implementation only within MVP requirements:
 
 -   basic navigation (link to page)
 -   page to list tickets
--   handles a large amount of data (12.000) without using any dependencies
+-   handles a large amount of data (12.000 entries) without using any dependencies
 -   row height is fixed
 -   uses virtual list strategy for rendering without external libraries
 -   backend is mocked and returns a new array of ticket on page load
@@ -29,10 +29,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 -   look into improvement of the ScalableList to handle dynamic row heights
 -   extend unit testing and implement E2E test for User journey
 -   create design system for consistency of components
--   implement action buttons with icons
 -   add proper navigation menu
 
 ### Learnings
 
--   virtual list strategy
+-   virtual list strategy concept
+-   virtualization list libraries
 -   extra practice with font scalability
+-   improved workload estimations
