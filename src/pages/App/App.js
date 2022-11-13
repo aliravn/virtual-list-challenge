@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Backlog from 'pages/Backlog/Backlog.js';
 
-import styles from './App.module.scss';
+import styles from 'pages/App/App.module.scss';
 
 function App() {
 	return (
@@ -12,7 +12,7 @@ function App() {
 					<ul className={styles.navigationList}>
 						<li>
 							<Link to={'/backlog'} className={styles.navigationLink}>
-								Tickets List
+								Click here to see the list of tickets
 							</Link>
 						</li>
 					</ul>
