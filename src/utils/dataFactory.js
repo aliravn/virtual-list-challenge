@@ -1,5 +1,5 @@
-const priorityCodes = ['Minor', 'Major', 'Critical', 'Blocker'];
-const statusCodes = ['Open', 'Closed', 'In Progress', 'in Testing', 'in Rework'];
+export const priorityCodes = ['minor', 'major', 'critical', 'blocker'];
+export const statusCodes = ['open', 'closed', 'in Progress', 'in Testing', 'in Rework'];
 
 const getRandomValue = (source, min, max) => {
 	const index = Math.floor(Math.random() * (max - min) + min);
