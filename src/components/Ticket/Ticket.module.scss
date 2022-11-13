@@ -69,3 +69,20 @@
 		padding: 4px;
 	}
 }
+
+// prioritu codes classes
+.blocker {
+	background-color: #f84444;
+}
+
+.critical {
+	background-color: #ee92a9;
+}
+
+.major {
+	background-color: #e3ec64;
+}
+
+.minor {
+	background-color: #92bff3;
+}
