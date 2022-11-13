@@ -19,3 +19,40 @@
 		padding: 1rem 4rem;
 	}
 }
+
+.navigation {
+	margin: 1rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.navigationList {
+	text-transform: uppercase;
+	list-style: none;
+
+	height: 2rem;
+
+	a {
+		text-decoration: none;
+	}
+
+	a:active {
+		color: #000000;
+	}
+
+	li {
+		padding: 1rem;
+		background-color: #ffb6c1;
+		border: 1px solid rgb(141, 96, 96);
+		border-radius: 3px;
+		cursor: pointer;
+	}
+
+	li:hover {
+		background-color: #eb8e9c;
+	}
+
+	li:active {
+		scale: 0.96;
+	}
+}
