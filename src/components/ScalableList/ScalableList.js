@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import styles from 'components/ScalableList/ScalableList.module.scss';
 
 const ScalableList = props => {
@@ -36,6 +37,20 @@ const ScalableList = props => {
 			<ul style={{ position: 'relative', height: `${innerHeight}px` }}>{items}</ul>
 		</div>
 	);
+};
+
+ScalableList.propTypes = {
+	itemsTotal: PropTypes.number,
+	itemHeight: PropTypes.number,
+	renderItem: PropTypes.func,
+	listHeight: PropTypes.number,
+};
+
+ScalableList.defaultProps = {
+	itemsTotal: 0,
+	itemHeight: 40,
+	renderItem: () => {},
+	listHeight: 400,
 };
 
 export default ScalableList;
