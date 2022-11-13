@@ -11,7 +11,11 @@ function App() {
 				<nav className={styles.navigation}>
 					<ul className={styles.navigationList}>
 						<li>
-							<Link to={'/backlog'} className={styles.navigationLink}>
+							<Link
+								to={'/backlog'}
+								className={styles.navigationLink}
+								aria-label='navigate to ticket list'
+							>
 								Click here to see the list of tickets
 							</Link>
 						</li>
