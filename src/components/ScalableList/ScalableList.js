@@ -18,6 +18,7 @@ const ScalableList = props => {
 					position: 'absolute',
 					top: `${i * itemHeight}px`,
 					width: '100%',
+					height: `${itemHeight}px`,
 				},
 			})
 		);
@@ -26,7 +27,11 @@ const ScalableList = props => {
 	const handleScroll = e => setScrollTop(e.currentTarget.scrollTop);
 
 	return (
-		<div className={styles.visibleArea} onScroll={handleScroll}>
+		<div
+			className={styles.visibleArea}
+			style={{ height: `${listHeight}px` }}
+			onScroll={handleScroll}
+		>
 			<ul style={{ position: 'relative', height: `${innerHeight}px` }}>{items}</ul>
 		</div>
 	);
