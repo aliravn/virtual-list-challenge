@@ -16,7 +16,7 @@ const Backlog = () => {
 				renderItem={({ index, style }) => {
 					return (
 						<li key={index} style={style}>
-							<Ticket />
+							<Ticket data={items[index]} />
 						</li>
 					);
 				}}
