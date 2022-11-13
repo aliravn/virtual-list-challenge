@@ -30,10 +30,11 @@
 	text-transform: uppercase;
 	list-style: none;
 
-	height: 2rem;
-
 	a {
+		color: #000000;
 		text-decoration: none;
+		line-height: 3rem;
+		padding: 1rem;
 	}
 
 	a:active {
@@ -41,7 +42,6 @@
 	}
 
 	li {
-		padding: 1rem;
 		background-color: #b9f193;
 		border: 2px solid rgb(8, 228, 74);
 		border-radius: 3px;
