@@ -19,6 +19,7 @@ const ScalableList = props => {
 					top: `${i * itemHeight}px`,
 					width: '100%',
 					height: `${itemHeight}px`,
+					padding: '2px',
 				},
 			})
 		);
