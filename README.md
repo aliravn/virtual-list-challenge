@@ -1,12 +1,12 @@
-## Virtual List Sample
+## Virtual List Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Implement a virtualized list from scratch within 48hrs
 
 ### How to start this app
 
 -   Run `yarn` or `npm install` to install all dependencies
 -   Run `yarn start` or `yarn start` in the project root folder to start the frontend and open
-    [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    [http://localhost:3000](http://localhost:3000) to view it in your browser
 
 ### Other commands
 
@@ -14,8 +14,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Due to time constraints and private commitments I had a chance to finish implementation only within MVP requirements:
 
--   basic navigation (link to page)
--   page to list tickets
+-   page to list tickets and basic navigation (link to page)
 -   handles a large amount of data (12.000 entries) without using any dependencies
 -   row height is fixed
 -   uses virtual list strategy for rendering without external libraries
