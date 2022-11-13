@@ -35,6 +35,7 @@
 		text-decoration: none;
 		line-height: 3rem;
 		padding: 1rem;
+		font-size: clamp(8px, 4vw, 16px);
 	}
 
 	a:active {
